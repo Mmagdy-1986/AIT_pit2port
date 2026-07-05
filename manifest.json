@@ -1,7 +1,7 @@
 {
-  "name": "AIT Rental Equipment Management",
-  "short_name": "AIT Rental",
-  "description": "Mobile PWA for leasing companies, contractors, equipment, contracts and shifts.",
+  "name": "AIT Rental Equipment OS",
+  "short_name": "AIT Rental OS",
+  "description": "Professional PWA for leasing companies, contractors, equipment, electronic contracts, finance, shifts and reports.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f6f7fb",
