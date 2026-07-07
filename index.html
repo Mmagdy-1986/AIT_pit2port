@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#162B49" />
+  <meta name="description" content="AIT Pit2Port ERP mobile-first equipment rental and mining operations management system" />
+  <title>AIT Pit2Port ERP</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <header class="topbar">
+      <div class="brand-row">
+        <button class="logo-mark" data-route="home" aria-label="AIT Home">AIT</button>
+        <div class="brand-copy">
+          <b>AIT Pit2Port ERP</b>
+          <span id="topMine">Eastern Desert Mine</span>
+        </div>
+        <button class="icon-btn" id="notifyBtn" title="Notifications">🔔<i id="notifyDot"></i></button>
+        <button class="avatar" data-route="settings" title="User">AD</button>
+      </div>
+      <div class="context-card">
+        <div>
+          <span id="todayLabel">اليوم</span>
+          <h1 id="pageTitle">لوحة التحكم</h1>
+          <p id="pageHint">مرحباً، تابع تشغيل المعدات والعقود والإنتاج اليوم.</p>
+        </div>
+        <select id="mineSelector" aria-label="Current mine"></select>
+      </div>
+    </header>
+
+    <main id="view" class="view"></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="active" data-route="home"><span>⌂</span><b>Home</b></button>
+      <button data-route="equipments"><span>🚜</span><b>Equipments</b></button>
+      <button data-route="quality"><span>📋</span><b>Quality</b></button>
+      <button data-route="reports"><span>📊</span><b>Reports</b></button>
+      <button data-route="more"><span>☰</span><b>More</b></button>
+    </nav>
+
+    <div id="modal" class="modal" aria-hidden="true"></div>
+    <div id="toast" class="toast"></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
